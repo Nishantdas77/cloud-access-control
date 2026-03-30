@@ -18,6 +18,7 @@ USERS = {
     "user":     {"password": "123",     "role": "developer", "department": "HR", "clearance": "confidential"},
 }
 
+
 # Role hierarchy
 ROLE_LEVEL = {"admin": 4, "developer": 3, "viewer": 2, "guest": 1}
 
