@@ -274,9 +274,9 @@ body::before {
   <div class="login-card">
     <div class="login-logo">☁ CloudVault</div>
     <div class="login-title">Secure Access Portal</div>
-    <div class="login-sub">Cloud Access Control &amp; Key Management Demo</div>
+    <div class="login-sub">Cloud Access Control &amp; Key Management</div>
     <div class="field-label">Username</div>
-    <input id="l-user" class="field-input" type="text" placeholder="alice" autocomplete="off">
+    <input id="l-user" class="field-input" type="text" placeholder="username" autocomplete="off">
     <div class="field-label">Password</div>
     <input id="l-pass" class="field-input" type="password" placeholder="••••••••" autocomplete="off">
     <div id="l-err" class="error-msg"></div>
@@ -284,10 +284,10 @@ body::before {
     <div class="login-hints">
       <p>Quick login — click any user:</p>
       <div class="hint-row">
-        <div class="hint-chip" onclick="quickLogin('alice','alice123')">alice / admin</div>
-        <div class="hint-chip" onclick="quickLogin('bob','bob123')">bob / developer</div>
-        <div class="hint-chip" onclick="quickLogin('carol','carol123')">carol / viewer</div>
-        <div class="hint-chip" onclick="quickLogin('eve','eve123')">eve / guest</div>
+        <div class="hint-chip" onclick="quickLogin('Nishant','nishant123')">Nishant / admin</div>
+        <div class="hint-chip" onclick="quickLogin('Srijib','srijib123')">Srijib / developer</div>
+        <div class="hint-chip" onclick="quickLogin('Sudipa','sudipa123')">Sudipa / viewer</div>
+        <div class="hint-chip" onclick="quickLogin('Random','random123')">Random / guest</div>
       </div>
     </div>
   </div>
@@ -381,8 +381,8 @@ body::before {
           <div class="field-group">
             <div class="field-label">Algorithm</div>
             <select id="key-algo" class="field-select">
-              <option value="AES-256">AES-256 (recommended)</option>
-              <option value="Fernet">Fernet (symmetric)</option>
+              <option value="AES-256">AES-256</option>
+              <!-- <option value="Fernet">Fernet (symmetric)</option> -->
             </select>
           </div>
           <button class="btn btn-success btn-sm" onclick="generateKey()">+ Generate Key</button>

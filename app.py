@@ -11,10 +11,10 @@ app.secret_key = secrets.token_hex(32)
 # ─── In-memory state ───────────────────────────────────────────────────────────
 
 USERS = {
-    "alice":   {"password": "alice123",   "role": "admin",     "department": "IT",  "clearance": "top-secret"},
-    "bob":     {"password": "bob123",     "role": "developer", "department": "Eng", "clearance": "confidential"},
-    "carol":   {"password": "carol123",   "role": "viewer",    "department": "HR",  "clearance": "public"},
-    "eve":     {"password": "eve123",     "role": "guest",     "department": "Ext", "clearance": "none"},
+    "Nishant":   {"password": "nishant123",   "role": "admin",     "department": "IT",  "clearance": "top-secret"},
+    "Srijib":     {"password": "srijib123",     "role": "developer", "department": "Eng", "clearance": "confidential"},
+    "Sudipa":   {"password": "sudipa123",   "role": "viewer",    "department": "HR",  "clearance": "public"},
+    "Random":     {"password": "random123",     "role": "guest",     "department": "Ext", "clearance": "none"},
 }
 
 # Role hierarchy
