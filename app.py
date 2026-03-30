@@ -15,6 +15,7 @@ USERS = {
     "Srijib":     {"password": "srijib123",     "role": "developer", "department": "Eng", "clearance": "confidential"},
     "Sudipa":   {"password": "sudipa123",   "role": "viewer",    "department": "HR",  "clearance": "public"},
     "Random":     {"password": "random123",     "role": "guest",     "department": "Ext", "clearance": "none"},
+    "user":     {"password": "123",     "role": "developer", "department": "HR", "clearance": "confidential"},
 }
 
 # Role hierarchy
@@ -122,8 +123,8 @@ def decrypt_data(payload: str, key_id: str):
 
 # ─── Seed some initial keys and blobs ──────────────────────────────────────────
 
-_k1 = generate_key_internal("alice", "AES-256")
-_k2 = generate_key_internal("bob",   "Fernet")
+_k1 = generate_key_internal("Nishant", "AES-256")
+_k2 = generate_key_internal("Srijib",   "AES-256")
 ct1, _ = encrypt_data("TOP SECRET: Q4 financial projections — internal use only.", _k1)
 ct2, _ = encrypt_data("DB_PASSWORD=s3cur3P@ss  API_KEY=sk-demo-abc123xyz", _k2)
 ENCRYPTED_BLOBS["blob-001"] = {"ciphertext": ct1, "key_id": _k1, "resource": "secret_files",  "owner": "alice", "label": "Q4 Financials",    "created_at": "2025-01-10 09:00:00"}
